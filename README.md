@@ -20,9 +20,7 @@ This repository shares the DAPR demo applications built using the PowerShell mod
 
 ***Subscribe to my YouTube Channel***
 
-<p align="center">
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/BrEgBBBCLGA/0.jpg)](https://www.youtube.com/watch?v=BrEgBBBCLGA)
-</p>
 
 ## Input Binding
 
