@@ -6,9 +6,10 @@ This repository shares the DAPR demo applications built using the PowerShell mod
 
 - [Stephane Van Gulick](https://github.com/Stephanevg) - Author of PSHTML module. 
 - [Matthew Kelly](https://github.com/Badgerati) - Author of Pode module. 
-- [Doug Finke](https://github.com/dfinke) - One who triggered me to think deep on Microservices, through the [blog]()
-- [Tyler Leonhardt](https://twitter.com/TylerLeonhardt) - Maintainers of Polaris module. The bit of knowledge I got on the web framework is through the Polaris module
-- [Micah Rairdon](https://twitter.com/tiberriver256) - Maintainers of Polaris module. The bit of knowledge I got on the web framework is through the Polaris module
+- [Doug Finke](https://github.com/dfinke) - One who triggered me to think deep on Microservices, through the [blog](https://dfinke.github.io/powershell,%20docker,%20pode/2020/08/01/PowerShell-Microservice-Hello-World.html)
+- Maintainers of Polaris module. If I know something in the web framework, that is because of the Polaris module. 
+    - [Tyler Leonhardt](https://twitter.com/TylerLeonhardt)
+    - [Micah Rairdon](https://twitter.com/tiberriver256)
 
 ## References
 
@@ -16,14 +17,8 @@ This repository shares the DAPR demo applications built using the PowerShell mod
 - [Polaris](https://github.com/powershell/polaris)
 - [PSHTML](https://github.com/Stephanevg/PSHTML)
 - [Dapr Docs](https://dapr.io/)
-- [Azure Container Apps]()
+- [Azure Container Apps](https://azure.microsoft.com/en-in/pricing/details/container-apps/)
 
 ***Subscribe to my YouTube Channel***
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/BrEgBBBCLGA/0.jpg)](https://www.youtube.com/watch?v=BrEgBBBCLGA)
-
-## Input Binding
-
-## Output Binding
-
-## Pub / Sub Demo 
