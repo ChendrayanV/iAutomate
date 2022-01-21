@@ -40,12 +40,17 @@ dapr run --log-level debug --app-id schedule --app-port 3000 --dapr-http-port 35
 # == APP == @{Name=Chendrayan Venkatesan; Time=13:59}
 ```
 
+## Input Binding (Azure Service Bus)
+
+```PowerShell
+dapr run --log-level debug --app-id servicebus --app-port 3000 --dapr-http-port 3500 --dapr-grpc-port 60002 --components-path .\components\  -- pwsh .\input-binding\azure-service-bus\app.ps1
+```
 
 ## Output Binding (Azure Table Storage)
 
 Assuming you have an Azure Storage Table in place. If not, create one using the [quick start guide](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-quickstart-portal).
 
-> Replace the value in statestore.yaml (output-binding/components/) file
+> Replace the value in statestore.yaml (components/) file
 
 ```PowerShell
 dapr run --log-level debug --app-id outputbinding --app-port 3000 --dapr-http-port 3500 --dapr-grpc-port 60002 --components-path .\components\ -- pwsh .\output-binding\app\app.ps1
