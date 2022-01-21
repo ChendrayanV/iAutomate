@@ -35,5 +35,5 @@ Avoid using the plain text password using the [secret store](https://docs.dapr.i
 ```PowerShell
 dapr run --log-level debug --app-id outputbinding --app-port 3000 --dapr-http-port 3500 --dapr-grpc-port 60002 --components-path .\output-binding\components\ -- pwsh .\output-binding\app\app.ps1
 ```
-<iframe width="726" height="409" src="https://www.youtube.com/embed/2bdYO89usmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2bdYO89usmE/0.jpg)](https://www.youtube.com/watch?v=2bdYO89usmE)
