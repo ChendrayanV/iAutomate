@@ -29,6 +29,18 @@ This repository shares the DAPR demo applications built using the PowerShell mod
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TtaOfeUaNHM/0.jpg)](https://www.youtube.com/watch?v=TtaOfeUaNHM)
 
+## Input Binding (Cron Schedule & Azure Service Bus Queue)
+
+- [Cron Scheduler Doc](https://docs.dapr.io/reference/components-reference/supported-bindings/cron/)
+- [Azure Service Bus Queue](https://docs.dapr.io/reference/components-reference/supported-bindings/servicebusqueues/)
+
+```PowerShell
+dapr run --log-level debug --app-id schedule --app-port 3000 --dapr-http-port 3500 --dapr-grpc-port 60002 --components-path .\components\  -- pwsh .\input-binding\scheduler\app.ps1
+# Output
+# == APP == @{Name=Chendrayan Venkatesan; Time=13:59}
+```
+
+
 ## Output Binding (Azure Table Storage)
 
 Assuming you have an Azure Storage Table in place. If not, create one using the [quick start guide](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-quickstart-portal).
@@ -36,7 +48,7 @@ Assuming you have an Azure Storage Table in place. If not, create one using the 
 > Replace the value in statestore.yaml (output-binding/components/) file
 
 ```PowerShell
-dapr run --log-level debug --app-id outputbinding --app-port 3000 --dapr-http-port 3500 --dapr-grpc-port 60002 --components-path .\output-binding\components\ -- pwsh .\output-binding\app\app.ps1
+dapr run --log-level debug --app-id outputbinding --app-port 3000 --dapr-http-port 3500 --dapr-grpc-port 60002 --components-path .\components\ -- pwsh .\output-binding\app\app.ps1
 ```
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2bdYO89usmE/0.jpg)](https://www.youtube.com/watch?v=2bdYO89usmE)
