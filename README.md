@@ -46,6 +46,22 @@ dapr run --log-level debug --app-id schedule --app-port 3000 --dapr-http-port 35
 dapr run --log-level debug --app-id servicebus --app-port 3000 --dapr-http-port 3500 --dapr-grpc-port 60002 --components-path .\components\  -- pwsh .\input-binding\azure-service-bus\app.ps1
 ```
 
+## Service To Service Invocation
+
+> Open a `PowerShell` console host
+
+```PowerShell
+dapr run --app-id order --app-port 6001 --dapr-http-port 3601 --dapr-grpc-port 60001 -- pwsh .\service-to-service-invocation\order\app.ps1
+```
+
+> run the below command in another `PowerShell` console host
+
+```PowerShell
+dapr run --app-id checkout --app-port 6002 --dapr-http-port 3602 --dapr-grpc-port 60002 -- pwsh .\service-to-service-invocation\checkout\app.ps1
+```
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/804U-u0gx84/0.jpg)](https://www.youtube.com/watch?v=804U-u0gx84)
+
 ## State Store (Azure Table Storage)
 
 Assuming you have an Azure Storage Table in place. If not, create one using the [quick start guide](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-quickstart-portal).
