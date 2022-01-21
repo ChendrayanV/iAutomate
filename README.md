@@ -96,3 +96,8 @@ dapr run --log-level debug --app-id outputbinding --app-port 3000 --dapr-http-po
 - Source Code and pipeline is available under template folder
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/tcFBzkf3hLo/0.jpg)](https://www.youtube.com/watch?v=tcFBzkf3hLo)
+
+
+## Azure Container Apps - (End to End Automation using PowerShell & Bicep)
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YMCJzQAfYh4/0.jpg)](https://www.youtube.com/watch?v=YMCJzQAfYh4)
