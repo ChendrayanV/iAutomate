@@ -2,9 +2,6 @@
 
 This repository shares the DAPR demo applications built using the PowerShell modules #Pode and #PSHTML. 
 
-<p align="center">
-:warning: Avoid using the plain text password and use the [secret store](https://docs.dapr.io/operations/components/component-secrets/) component. 
-</p>
 
 ## Credits 
 
@@ -28,7 +25,9 @@ This repository shares the DAPR demo applications built using the PowerShell mod
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/BrEgBBBCLGA/0.jpg)](https://www.youtube.com/watch?v=BrEgBBBCLGA)
 
-> Output Binding (Azure Table Storage)
+## Output Binding (Azure Table Storage)
+
+> Replace the value in statestore.yaml file
 
 ```PowerShell
 dapr run --log-level debug --app-id outputbinding --app-port 3000 --dapr-http-port 3500 --dapr-grpc-port 60002 --components-path .\output-binding\components\ -- pwsh .\output-binding\app\app.ps1
