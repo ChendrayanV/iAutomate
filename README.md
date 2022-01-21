@@ -49,6 +49,17 @@ dapr run --log-level debug --app-id servicebus --app-port 3000 --dapr-http-port 
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Eeg9TFKBw08/0.jpg)](https://www.youtube.com/watch?v=Eeg9TFKBw08)
 
+## Publish - Subscribe
+
+- [Publish and subscribe overview](https://docs.dapr.io/developing-applications/building-blocks/pubsub/pubsub-overview/)
+
+```PowerShell
+dapr run --app-id sub-app-a --app-port 3000 --dapr-http-port 3500 -d .\components\ -- pwsh .\publish-subscribe\sub-app-a.ps1
+dapr run --app-id pub-app-a --app-port 3001 -d .\components\ -- pwsh .\publish-subscribe\pub-app-a.ps1
+```
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/xF8x9HoFYSs/0.jpg)](https://www.youtube.com/watch?v=xF8x9HoFYSs)
+
 ## Service To Service Invocation
 
 - [Service Invocation Overview](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/)
@@ -85,4 +96,3 @@ dapr run --log-level debug --app-id outputbinding --app-port 3000 --dapr-http-po
 - Source Code and pipeline is available under template folder
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/tcFBzkf3hLo/0.jpg)](https://www.youtube.com/watch?v=tcFBzkf3hLo)
-
