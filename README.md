@@ -20,6 +20,7 @@ This repository shares the DAPR demo applications built using the PowerShell mod
 - [Dapr Docs](https://dapr.io/)
 - [Install the Dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
 - [Azure Container Apps](https://azure.microsoft.com/en-in/pricing/details/container-apps/)
+- [Dapr Official YouTube Channel](https://www.youtube.com/channel/UCtpSQ9BLB_3EXdWAUQYwnRA)
 
 ***Subscribe to my YouTube Channel***
 
@@ -47,6 +48,8 @@ dapr run --log-level debug --app-id servicebus --app-port 3000 --dapr-http-port 
 ```
 
 ## Service To Service Invocation
+
+- [Service Invocation Overview](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/)
 
 > Open a `PowerShell` console host
 
