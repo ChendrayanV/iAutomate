@@ -1,0 +1,55 @@
+trigger:
+  branches:
+    include:
+      - '*'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  resourceGroupName: 'rgp-dear-azure-uat'
+  location: 'northeurope'
+  azureSubscription: 'Dear-Azure'
+  imageName: 'chenv/dear-azure:2464'
+
+stages:
+  - stage: build
+    jobs:
+      - job: BUILD
+        steps:
+          - task: AzureCLI@2
+            inputs:
+              azureSubscription: $(azureSubscription)
+              scriptType: pscore
+              scriptLocation: inlineScript
+              inlineScript: 'az bicep build --file main.bicep' 
+          - task: PublishBuildArtifacts@1 
+            displayName: 'Publish artifact in pipeline' 
+            inputs: 
+              PathtoPublish: '$(Build.SourcesDirectory)/main.json'  
+              ArtifactName: 'iautomate'  
+              publishLocation: 'Container' 
+
+  - stage: deploy
+    jobs:
+    - deployment: iautomate
+      displayName: 'Deploy Container Apps'
+      environment: 'AzureDeployment'
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - checkout: self
+            - task: AzureCLI@2
+              displayName: 'deploy bicep template'
+              inputs:
+                azureSubscription: $(azureSubscription) 
+                scriptType: 'pscore'
+                scriptLocation: 'inlineScript'
+                inlineScript: |
+                  az group create --name $(ResourceGroupName) --location $(location)
+                  az deployment group create  `
+                  --template-file $(Build.SourcesDirectory)/main.bicep `
+                  --resource-group $(ResourceGroupName) `
+                  --parameters imageName=$(imageName)
+                  

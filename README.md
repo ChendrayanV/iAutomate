@@ -44,6 +44,7 @@ dapr run --log-level debug --app-id outputbinding --app-port 3000 --dapr-http-po
 ## BICEP TEMPLATE FOR AZURE CONTAINER APPS
 
 - [BICEP TEMPLATE FOR AZURE CONTAINER APPS](https://about-powershell.com/blog/bicep-template-for-azure-container-apps/)
+- Source Code and pipeline is available under template folder
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/tcFBzkf3hLo/0.jpg)](https://www.youtube.com/watch?v=tcFBzkf3hLo)
 
