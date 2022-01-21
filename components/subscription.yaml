@@ -1,0 +1,10 @@
+apiVersion: dapr.io/v1alpha1
+kind: Subscription
+metadata:
+  name: order_pub_sub
+spec:
+  topic: order
+  route: /process
+  pubsubname: order_pub_sub
+scopes:
+- sub-app-a

@@ -30,7 +30,7 @@ This repository shares the DAPR demo applications built using the PowerShell mod
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TtaOfeUaNHM/0.jpg)](https://www.youtube.com/watch?v=TtaOfeUaNHM)
 
-## Input Binding (Cron Schedule & Azure Service Bus Queue)
+## Input Binding (Cron Schedule)
 
 - [Cron Scheduler Doc](https://docs.dapr.io/reference/components-reference/supported-bindings/cron/)
 - [Azure Service Bus Queue](https://docs.dapr.io/reference/components-reference/supported-bindings/servicebusqueues/)
@@ -46,6 +46,8 @@ dapr run --log-level debug --app-id schedule --app-port 3000 --dapr-http-port 35
 ```PowerShell
 dapr run --log-level debug --app-id servicebus --app-port 3000 --dapr-http-port 3500 --dapr-grpc-port 60002 --components-path .\components\  -- pwsh .\input-binding\azure-service-bus\app.ps1
 ```
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Eeg9TFKBw08/0.jpg)](https://www.youtube.com/watch?v=Eeg9TFKBw08)
 
 ## Service To Service Invocation
 

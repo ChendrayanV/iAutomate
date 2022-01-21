@@ -24,4 +24,4 @@ Start-PodeServer {
         }
         Write-PodeJsonResponse -Value $($body)
     }
-}
+} -DisableTermination
