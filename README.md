@@ -3,10 +3,8 @@
 This repository shares the DAPR demo applications built using the PowerShell modules #Pode and #PSHTML. 
 
 <p align="center">
-:warning: 
+:warning: Avoid using the plain text password and use the [secret store](https://docs.dapr.io/operations/components/component-secrets/) component. 
 </p>
-
-Avoid using the plain text password using the [secret store](https://docs.dapr.io/operations/components/component-secrets/) component. 
 
 ## Credits 
 
