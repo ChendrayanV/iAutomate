@@ -25,12 +25,25 @@ This repository shares the DAPR demo applications built using the PowerShell mod
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/BrEgBBBCLGA/0.jpg)](https://www.youtube.com/watch?v=BrEgBBBCLGA)
 
+## Dapr'ize PowerShell Pode Application
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TtaOfeUaNHM/0.jpg)](https://www.youtube.com/watch?v=TtaOfeUaNHM)
+
 ## Output Binding (Azure Table Storage)
 
-> Replace the value in statestore.yaml file
+Assuming you have an Azure Storage Table in place. If not, create one using the [quick start guide](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-quickstart-portal).
+
+> Replace the value in statestore.yaml (output-binding/components/) file
 
 ```PowerShell
 dapr run --log-level debug --app-id outputbinding --app-port 3000 --dapr-http-port 3500 --dapr-grpc-port 60002 --components-path .\output-binding\components\ -- pwsh .\output-binding\app\app.ps1
 ```
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2bdYO89usmE/0.jpg)](https://www.youtube.com/watch?v=2bdYO89usmE)
+
+## BICEP TEMPLATE FOR AZURE CONTAINER APPS
+
+- [BICEP TEMPLATE FOR AZURE CONTAINER APPS](https://about-powershell.com/blog/bicep-template-for-azure-container-apps/)
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/tcFBzkf3hLo/0.jpg)](https://www.youtube.com/watch?v=tcFBzkf3hLo)
+
