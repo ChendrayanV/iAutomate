@@ -9,7 +9,7 @@ spec:
   - name: storageAccount
     value: icontoso 
   - name: storageAccessKey
-    value: Vs60bZ/9VrpBoILsYhAIC/Od3gGtE7aXc5por9ugmDxsSxmyfeTnQeOeYNr/L6CL2qTCyeMbDHMHqSHcYN8rVw==
+    value: {YOUR_STORAGE_ACCOUNT_KEY}
   - name: container
     value: demo
   - name: decodeBase64
