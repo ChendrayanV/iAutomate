@@ -1,0 +1,18 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: bloboutput
+spec:
+  type: bindings.azure.blobstorage
+  version: v1
+  metadata:
+  - name: storageAccount
+    value: icontoso 
+  - name: storageAccessKey
+    value: Vs60bZ/9VrpBoILsYhAIC/Od3gGtE7aXc5por9ugmDxsSxmyfeTnQeOeYNr/L6CL2qTCyeMbDHMHqSHcYN8rVw==
+  - name: container
+    value: demo
+  - name: decodeBase64
+    value: true
+  - name: getBlobRetryCount
+    value: 3
